@@ -5,16 +5,17 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-     hamburgerClass: '',
+     active: false,
      navbarclass: 'hidden'
         };
-      this.toggleHamburger=this.toggleHamburger.bind(this);
+      this.addActiveClass=this.addActiveClass.bind(this);
       this.showNavbar=this.showNavbar.bind(this);
     }
 
-  toggleHamburger() {
-
-    }
+  addActiveClass() {
+      const currentState = this.state.active;
+      this.setState({ active: !currentState});
+    };
 
   showNavbar() {
     this.setState({navbarclass:'show'})
@@ -30,7 +31,7 @@ class Navbar extends Component {
           <button
               className="col-4 btn hamburger hamburger--squeeze pull-right"
               type="button"
-              onClick={this.toggleHamburger}
+              onClick={this.toggleClass}
               >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
