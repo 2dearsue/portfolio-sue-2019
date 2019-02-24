@@ -1,0 +1,15 @@
+@import 'colors';
+@import 'fonts';
+@import 'header';
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+body {
+ background-image: url("../img/background.jpg");
+}
+
+.hidden {
+   display:none;
+}
+.show{
+   display:block;
+}
