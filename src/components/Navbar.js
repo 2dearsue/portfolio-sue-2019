@@ -5,33 +5,34 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-     active: false,
-     navbarclass: 'hidden'
+     navbarclass: false
         };
       this.addActiveClass=this.addActiveClass.bind(this);
       this.showNavbar=this.showNavbar.bind(this);
     }
 
   addActiveClass() {
-      const currentState = this.state.active;
-      this.setState({ active: !currentState});
-    };
+      const toggleHamburger = () => {
+        document.getElementById("hamburger").classList.add("is-active");
+      };
+      toggleHamburger();
+    }
 
   showNavbar() {
-    this.setState({navbarclass:'show'})
+    this.setState({navbarclass: true})
   }
 
   render() {
     return (
       <section>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <h3 className="logo" id="scrollto1">sue</h3>
 
         <div className="col-xs-2">
           <button
-              className="col-4 btn hamburger hamburger--squeeze pull-right"
+              className="btn hamburger hamburger--squeeze"
+              id="hamburger"
               type="button"
-              onClick={this.toggleClass}
+              onClick={this.toggleHamburger}
               >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
@@ -39,9 +40,9 @@ class Navbar extends Component {
           </button>
         </div>
 
-          <div className="navbar-collapse hidden"
-                id="navbarSupportedContent"
-                navbarclass={this.navbarclass}>
+          {(this.state.showNavbar &&
+            <div className="navbar-collapse hidden"
+                id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active border-2">
                 <span className="nav-link text-white text-center border-white border" id="2">About Me</span>
@@ -54,6 +55,7 @@ class Navbar extends Component {
               </li>
             </ul>
           </div>
+        )}
         </nav>
       </section>
     );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.scss';
 import Intro from './Intro';
+import AboutMe from './AboutMe';
 
 class App extends Component {
 
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <section>
         <Intro />
+
       </section>
     );
   }
