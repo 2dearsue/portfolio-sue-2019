@@ -12,7 +12,7 @@ class Intro extends Component {
 
       <div className="container">
         <div className="row">
-          <div className="ml-auto border border-white m-5">
+          <div className="ml-auto border border-white m-4">
             <div className="col-xs-10">
 
               <Navbar />
@@ -24,7 +24,7 @@ class Intro extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-12 col-xs-4 mt-10">
+            <div className="col-12 col-xs-4">
               <div className="m-6 box-intro mx-auto bg-white">
                 <h2 className="portfolio text-left ml-4">Port .</h2>
                 <h2 className="portfolio text-left">folio</h2>
@@ -36,7 +36,7 @@ class Intro extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-                <h2 className="intro-text text-right text-white border border-warning pr-2">Hello</h2>
+                <h2 className="intro-header text-right text-white border border-warning pr-2">Hello</h2>
             </div>
           </div>
         </div>
