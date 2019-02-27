@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar'
 
-class Intro extends Component {
+export default class Intro extends Component {
 
   render() {
     return (
 
     <>
       <section>
-
 
       <div className="container">
         <div className="row">
@@ -47,5 +46,3 @@ class Intro extends Component {
     );
   }
 }
-
-export default Intro;
