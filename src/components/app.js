@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.scss';
-import Navbar from './Navbar';
+import Intro from './Intro';
+import AboutMe from './AboutMe';
+// import Skills from './Skills';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
-class App extends Component {
+export default class App extends Component {
+
+  constructor(props) {
+    super(props);
+      this.state = {isRedirectSet : false};
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({isRedirectSet:true}), 8000);
+  }
 
   render() {
     return (
-      <section>
-        <Navbar />
-      </section>
+      <BrowserRouter>
+        <>
+        <Route exact path="/" render= {() => <Intro /> } />
+        <Switch>
+          <Route path="/aboutMe" render= {() => <AboutMe /> } />
+          {this.state.isRedirectSet && <Redirect to="/aboutMe" />}
+        </Switch>
+        </>
+      </BrowserRouter>
     );
   }
 }
-
-export default App;

@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'fonts';
-@import 'header';
+@import 'intro';
+@import 'aboutMe';
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 
 body {
@@ -8,8 +9,8 @@ body {
 }
 
 .hidden {
-   display:none;
+   display: none;
 }
 .show{
-   display:block;
+   display: block;
 }
