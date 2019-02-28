@@ -95,7 +95,7 @@ class Skills extends Component {
   }
 }
 
-export class SkillsPage extends React.Component {
+export default class SkillsPage extends React.Component {
 
   render() {
     return (

@@ -9,33 +9,31 @@ export default class Intro extends Component {
     <>
       <section>
 
-      <div className="container">
+      <div className="container d-flex justify-content-end">
         <div className="row">
-          <div className="ml-auto border border-white m-4">
+          <div className="border border-white">
             <div className="col-xs-10">
-
               <Navbar />
-
             </div>
           </div>
         </div>
       </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-xs-4">
-              <div className="m-6 box-intro mx-auto bg-white">
+        <div className="container d-flex flex-column justify-content-center mt-4">
+          <div className="row mx-auto">
+            <div className="">
                 <h2 className="portfolio text-left ml-4">Port .</h2>
                 <h2 className="portfolio text-left">folio</h2>
-              </div>
+
+              <div className="box-intro bg-white"></div>
             </div>
           </div>
         </div>
 
         <div className="container">
           <div className="row">
-            <div className="col-12">
-                <h2 className="intro-header text-right text-white border border-warning pr-2">Hello</h2>
+            <div className="col-12 col-sm-12">
+                <h2 className="header text-right text-white border border-warning pr-3">Hello</h2>
             </div>
           </div>
         </div>

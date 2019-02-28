@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/main.scss';
 import Intro from './Intro';
 import AboutMe from './AboutMe';
-// import Skills from './Skills';
+import SkillsPage from './Skills';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
 export default class App extends Component {
@@ -12,9 +12,9 @@ export default class App extends Component {
       this.state = {isRedirectSet : false};
   }
 
-  componentDidMount() {
-    setTimeout(() => this.setState({isRedirectSet:true}), 8000);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => this.setState({isRedirectSet:true}), 8000);
+  // }
 
   render() {
     return (
@@ -24,6 +24,7 @@ export default class App extends Component {
         <Switch>
           <Route path="/aboutMe" render= {() => <AboutMe /> } />
           {this.state.isRedirectSet && <Redirect to="/aboutMe" />}
+          <Route path="/skills" render= {() => <SkillsPage /> } />
         </Switch>
         </>
       </BrowserRouter>
