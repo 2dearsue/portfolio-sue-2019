@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
 
 export default class Intro extends Component {
 
@@ -9,15 +9,7 @@ export default class Intro extends Component {
     <>
       <section>
 
-      <div className="container d-flex justify-content-end">
-        <div className="row">
-          <div className="border border-white">
-            <div className="col-xs-10">
-              <Navbar />
-            </div>
-          </div>
-        </div>
-      </div>
+        <Navbar />
 
         <div className="container d-flex flex-column justify-content-center mt-4">
           <div className="row mx-auto">

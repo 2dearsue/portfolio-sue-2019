@@ -13,7 +13,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({isRedirectSet:true}), 5000);
+    setTimeout(() => this.setState({isRedirectSet:true}), 10000);
   }
 
   render() {

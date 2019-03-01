@@ -14,24 +14,6 @@
   text-transform: uppercase;
 }
 
-.box-about {
-  position: relative;
-  z-index: -1;
-  width: 100vw;
-  height: 110vw;
-  margin-top: -110vw;
-  // opacity: 0.8;
-  transform: translateX(7vw);
-  box-shadow: 0.5vw 0.5vw grey;
-}
-
-.box-skills {
-  @extend .box-about;
-  width: 75vw;
-  height: 110vw;
-  transform: translateY(-16vw);
-}
-
 .header {
   font-weight: bold;
   font-size: 3rem;
@@ -39,13 +21,17 @@
   transform: translate(-10vw, -6vw);
 }
 
+.box-skills {
+  @extend .box-intro;
+  width: 75vw;
+  height: 110vw;
+  transform: translateY(-16vw);
+}
+
 .intro-text {
-    // font-family: $shadows;
   font-weight: bold;
   font-size: 3rem;
-  // color: gold;
   text-shadow: 0.3vw 0.3vw grey;
-  // transform: translate(20vw);
   margin-top: 20vw;
 }
 
@@ -67,7 +53,6 @@
 .skills-text {
   @extend .portfolio;
   font-size: 0.9rem;
-  // margin-top: 15vw;
   transform: translate(0);
 }
 

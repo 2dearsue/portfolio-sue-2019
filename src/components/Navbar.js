@@ -30,41 +30,43 @@ class Navbar extends Component {
   render() {
     return (
       <section>
-      <nav className="navbar navbar-expand-lg navbar-light mt-2 mx-auto">
+        <nav className="navbar navbar-expand-lg navbar-light">
 
-        <div className="col-xs-2">
-          <button
-              ref="btn"
-              className="btn hamburger hamburger--squeeze"
-              id="hamburger"
-              type="button"
-              onClick={this.addActiveClass}
-              >
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
-
-          {(this.state.showNavbar &&
-            <div className="navbar-collapse "
-                id="navbarSupportedContent">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active border-2">
-                <NavLink to="/aboutMe" className="nav-link"><span className="nav-link text-white text-center border-white border" id="2">About Me</span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/skills" className="nav-link"><span className="nav-link text-white text-center">Skills</span>
-                </NavLink>
-              </li>
-              <li className="nav-item dropdown">
-                <span className="nav-link text-white text-center" id="4">Download CV</span>
-              </li>
-            </ul>
+          <div className="col-xs-2">
+            <button
+                ref="btn"
+                className="btn hamburger hamburger--squeeze"
+                id="hamburger"
+                type="button"
+                onClick={this.addActiveClass}
+                >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
-        )}
-        </nav>
+
+            {(this.state.showNavbar &&
+              <div className="navbar-collapse "
+                  id="navbarSupportedContent">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item active">
+                  <NavLink to="/aboutMe" className="nav-link">
+                  <span className="nav-link text-white text-left" id="2">About Me</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/skills" className="nav-link">
+                  <span className="nav-link text-white text-left">Skills</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item dropdown">
+                  <span className="nav-link text-white text-left" id="4">Download CV</span>
+                </li>
+              </ul>
+            </div>
+          )}
+            </nav>
       </section>
     );
   }

@@ -1,95 +1,63 @@
 import React, { Component } from 'react';
-import { FaHtml5, FaArrowRight, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
-import { Route } from 'react-router-dom';
+import { FaHtml5, FaArrowRight, FaArrowLeft, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
+import { Route, NavLink } from 'react-router-dom';
+import Navbar from './Navbar';
+import SkillIcons from './SkillIcons';
 
 class Skills extends Component {
 
   render() {
     return (
 
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="skills-header text-right text-white border border-warning pr-2">Skills</h2>
-          </div>
-        </div>
-      </div>
+      <>
 
-      <div className="container">
+      <div className="container d-flex justify-content-end">
         <div className="row">
-          <div className="box-skills ml-auto pt-5 m-4 bg-white">
+          <div className="">
             <div className="col-xs-10">
-              <div className="container d-flex-column">
-              <h2 className="skills-text text-center">...Regulars</h2>
-                <div className="d-flex justify-content-around">
-                  <div className="d-flex align-items-center">
-
-                    <div>
-                      <FaHtml5 className="arrow ml-3" />
-                      <p className="sub-text ml-3">Html5</p>
-                    </div>
-
-                    <div>
-                      <FaCss3 className="arrow ml-3"/>
-                      <p className="sub-text ml-3">CSS</p>
-                    </div>
-
-                    <div>
-                      <FaJs className="arrow ml-3"/>
-                      <p className="sub-text ml-2">Javascript</p>
-                    </div>
-
-                    </div>
-                  </div>
-                </div>
-
-              <h2 className="skills-text text-center pt-3">...Frameworks etc.</h2>
-                  <div className="d-flex justify-content-around">
-                    <div className="d-flex">
-
-                      <div>
-                        <FaReact className="arrow ml-2"/>
-                        <p className="sub-text ml-2">React</p>
-                      </div>
-
-                      <div>
-                        <FaSass className="arrow ml-3"/>
-                        <p className="sub-text ml-3">Sass</p>
-                      </div>
-
-                    </div>
-                  </div>
-
-                <h2 className="skills-text text-center pt-3">...Tools</h2>
-                    <div className="d-flex justify-content-around">
-                      <div className="d-flex align-items-end">
-
-                        <div>
-                          <FaGit className="arrow ml-2"/>
-                          <p className="sub-text ml-3">Git</p>
-                        </div>
-
-                        <div>
-                          <FaSlack className="arrow ml-2"/>
-                          <p className="sub-text ml-2">Slack</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-12">
-                          <div>
-                            <FaArrowRight className="arrow mt-5 ml-5 white"/>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <Navbar />
             </div>
           </div>
         </div>
       </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-sm-12 mt-5">
+              <h2 className="header text-right text-white border border-warning pr-3">Skills</h2>
+          </div>
+        </div>
+      </div>
+
+        <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
+          <div className="row mx-auto">
+            <div className="">
+              <div className="box-intro bg-white">
+                <SkillIcons />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-4 offset-4">
+              <div className="d-inline-flex">
+                <NavLink to="/aboutMe" className="nav-link">
+                  <FaArrowLeft
+                    className="arrow mt-4 white"
+                  />
+                </NavLink>
+                <NavLink to="/" className="nav-link">
+                  <FaArrowRight
+                    className="arrow mt-4 white"
+                  />
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </>
     );
   }
