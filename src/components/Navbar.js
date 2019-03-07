@@ -30,7 +30,7 @@ class Navbar extends Component {
   render() {
     return (
       <section>
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light float-right">
 
           <div className="col-xs-2">
             <button
@@ -47,21 +47,23 @@ class Navbar extends Component {
           </div>
 
             {(this.state.showNavbar &&
-              <div className="navbar-collapse "
+              <div className="navbar-collapse"
                   id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                   <NavLink to="/aboutMe" className="nav-link">
-                  <span className="nav-link text-white text-left" id="2">About Me</span>
+                  <span className="nav-link text-white text-right" id="2">About Me</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/skills" className="nav-link">
-                  <span className="nav-link text-white text-left">Skills</span>
+                  <span className="nav-link text-white text-right">Skills</span>
                   </NavLink>
                 </li>
-                <li className="nav-item dropdown">
-                  <span className="nav-link text-white text-left" id="4">Download CV</span>
+                <li className="nav-item">
+                  <NavLink to="/skills" className="nav-link">
+                  <span className="nav-link text-white text-right">Download CV</span>
+                  </NavLink>
                 </li>
               </ul>
             </div>
