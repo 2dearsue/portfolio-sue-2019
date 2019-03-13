@@ -13,7 +13,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({isRedirectSet:true}), 10000);
+    setTimeout(() => this.setState({isRedirectSet:true}), 5000);
   }
 
   render() {
@@ -22,6 +22,7 @@ export default class App extends Component {
         <>
         <Route exact path="/" render= {() => <Intro /> } />
         <Switch>
+        <Route exact path="/home" render= {() => <Intro /> } />
           <Route path="/aboutMe" render= {() => <AboutMe /> } />
           <Route path="/skills" render= {() => <SkillsPage /> } />
           {this.state.isRedirectSet && <Redirect to="/aboutMe" />}

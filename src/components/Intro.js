@@ -11,7 +11,7 @@ export default class Intro extends Component {
 
         <Navbar />
 
-        <div className="container d-flex flex-column justify-content-center mt-4">
+        <div className="container d-flex flex-column justify-content-end mt-4">
           <div className="row mx-auto">
             <div className="">
                 <h2 className="portfolio text-left ml-4">Port .</h2>

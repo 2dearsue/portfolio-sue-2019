@@ -34,9 +34,9 @@ export default class AboutMe extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-4 offset-4">
+            <div className="ml-auto mr-auto">
               <div className="d-inline-flex">
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/home" className="nav-link">
                   <FaArrowLeft
                     className="arrow mt-4 white"
                   />

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { FaHtml5, FaArrowRight, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { FaHtml5, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
 
 export default class SkillIcons extends Component {
 
@@ -8,73 +7,107 @@ export default class SkillIcons extends Component {
     return (
 
       <>
-
         <div className="container">
-          <div className="row">
-            <div className="mx-auto pt-3 m-4">
-              <div className="col-xs-10">
-                <div className="container d-flex-column">
-                <h2 className="skills-text text-center mb-3">...Regulars</h2>
-                  <div className="d-flex justify-content-around">
-                    <div className="d-flex align-items-center">
 
-                      <div>
-                        <FaHtml5 className="arrow ml-3" />
-                        <p className="sub-text ml-3">Html5</p>
+                <div className="card-deck mx-auto pt-5">
+
+                  <div className="card border-0 card-transparent p-3">
+                    <div className="card-block">
+
+                      <h4 className="card-title skills-text text-center pb-1 border-bottom border-secondary">Basics</h4>
+                      <div className="card-deck text-center">
+
+                        <div className="card border-0">
+                          <div className="card-block">
+                            <div className="card-image">
+                              <FaHtml5 className="arrow" />
+                              <p className="sub-text">Html5</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="card border-0">
+                          <div className="card-block">
+                            <div className="card-image">
+                              <FaCss3 className="arrow" />
+                              <p className="sub-text">CSS</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="card border-0">
+                          <div className="card-block">
+                            <div className="card-image">
+                              <FaJs className="arrow" />
+                              <p className="sub-text">Javascript</p>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
 
-                      <div>
-                        <FaCss3 className="arrow ml-3"/>
-                        <p className="sub-text ml-3">CSS</p>
-                      </div>
+                    </div>
+                  </div>
 
-                      <div>
-                        <FaJs className="arrow ml-3"/>
-                        <p className="sub-text ml-2">Javascript</p>
-                      </div>
+                  <div className="card border-0 card-transparent p-3">
+                    <div className="card-block">
+                      <h4 className="card-title skills-text text-center pb-1 border-bottom border-secondary">Frameworks</h4>
+
+                      <div className="card-deck text-center">
+
+                        <div className="card border-0">
+                          <div className="card-block">
+                            <div className="card-image">
+                              <FaReact className="arrow" />
+                              <p className="sub-text">React</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="card border-0">
+                          <div className="card-block">
+                            <div className="card-image">
+                              <FaSass className="arrow" />
+                              <p className="sub-text">Sass</p>
+                            </div>
+                          </div>
+                        </div>
 
                       </div>
                     </div>
                   </div>
 
-                <h2 className="skills-text text-center pt-3  mb-3">...Frameworks etc.</h2>
-                    <div className="d-flex justify-content-around">
-                      <div className="d-flex">
+                </div>
 
-                        <div>
-                          <FaReact className="arrow ml-2"/>
-                          <p className="sub-text ml-2">React</p>
+                <div className="card border-0 p-3 w-50 mx-auto">
+                  <div className="card-block">
+                    <h4 className="card-title skills-text text-center pb-1 border-bottom border-secondary">Tools</h4>
+
+                    <div className="card-deck text-center">
+
+                      <div className="card border-0">
+                        <div className="card-block">
+                          <div className="card-image">
+                            <FaGit className="arrow" />
+                            <p className="sub-text">Git</p>
+                          </div>
                         </div>
-
-                        <div>
-                          <FaSass className="arrow ml-3"/>
-                          <p className="sub-text ml-3">Sass</p>
-                        </div>
-
                       </div>
+
+                      <div className="card border-0">
+                        <div className="card-block">
+                          <div className="card-image">
+                            <FaSlack className="arrow" />
+                            <p className="sub-text">Slack</p>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-
-                  <h2 className="skills-text text-center pt-3 mb-3">...Tools</h2>
-                      <div className="d-flex justify-content-around">
-                        <div className="d-flex align-items-end">
-
-                          <div>
-                            <FaGit className="arrow ml-2"/>
-                            <p className="sub-text ml-3">Git</p>
-                          </div>
-
-                          <div>
-                            <FaSlack className="arrow ml-2"/>
-                            <p className="sub-text ml-2">Slack</p>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                </div>
 
               </div>
-            </div>
-          </div>
-        </div>
-
         </>
       );
     }

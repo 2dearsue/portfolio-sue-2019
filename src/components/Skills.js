@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaHtml5, FaArrowRight, FaArrowLeft, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft} from 'react-icons/fa';
 import { Route, NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
 import SkillIcons from './SkillIcons';
@@ -41,14 +41,14 @@ class Skills extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-4 offset-4">
+            <div className="ml-auto mr-auto">
               <div className="d-inline-flex">
                 <NavLink to="/aboutMe" className="nav-link">
                   <FaArrowLeft
                     className="arrow mt-4 white"
                   />
                 </NavLink>
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/home" className="nav-link">
                   <FaArrowRight
                     className="arrow mt-4 white"
                   />
