@@ -13,13 +13,12 @@
 }
 
 .arrow-down {
-  font-size: 10rem;
+  font-size: 7rem;
   color: white;
 }
 
 .header-download {
-  width: 50vw;
-  padding-top: 10vw;
+  width: 45vw;
   margin-top: auto;
   color: white;
   font-weight: 400;
@@ -27,11 +26,15 @@
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   span {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
+}
+
+a:hover {
+  text-decoration: none !important;
 }

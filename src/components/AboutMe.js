@@ -12,7 +12,15 @@ export default class AboutMe extends Component {
     <>
       <section>
 
-      <Navbar />
+      <div className="container d-flex justify-content-end">
+        <div className="row">
+          <div className="">
+            <div className="col-xs-10">
+              <Navbar />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="container">
         <div className="row">

@@ -48,7 +48,7 @@ class Skills extends Component {
                     className="arrow white"
                   />
                 </NavLink>
-                <NavLink to="/home" className="nav-link">
+                <NavLink to="/download" className="nav-link">
                   <FaArrowRight
                     className="arrow white"
                   />
