@@ -1,10 +1,18 @@
-.box-intro {
+.box {
   width: 80vw;
   height: auto;
   box-shadow: 0.5vw 0.5vw grey;
   position: relative;
   z-index: -1;
-  margin-top: -25vw;
+  margin-top: -24vw;
+}
+
+.box-intro {
+  @extend .box;
+  margin-top: 0;
+  height: 80vw;
+  position: relative;
+  top: -23vw;
 }
 
 .portfolio {
@@ -19,6 +27,14 @@
   font-size: 3rem;
   text-shadow: 0.3vw 0.3vw grey;
   transform: translate(-10vw, -6vw);
+}
+
+.header-intro {
+  @extend .header;
+  position: relative;
+  top: -29vw;
+  left: -10vw;
+  transform: translate(0,0);
 }
 
 .box-skills {
@@ -63,3 +79,7 @@
 .sub-text {
   font-size: 0.6rem;
 }
+
+// .arrows {
+//   margin-top: -20vw;
+// }

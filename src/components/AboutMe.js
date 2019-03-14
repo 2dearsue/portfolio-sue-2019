@@ -25,14 +25,14 @@ export default class AboutMe extends Component {
         <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
           <div className="row mx-auto">
             <div className="">
-              <div className="box-intro bg-white">
+              <div className="box bg-white">
                 <IntroText />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container arrows">
           <div className="row">
             <div className="ml-auto mr-auto">
               <div className="d-inline-flex">

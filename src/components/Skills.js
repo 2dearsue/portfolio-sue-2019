@@ -32,25 +32,25 @@ class Skills extends Component {
         <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
           <div className="row mx-auto">
             <div className="">
-              <div className="box-intro bg-white">
+              <div className="box bg-white mb-3">
                 <SkillIcons />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container arrows">
           <div className="row">
             <div className="ml-auto mr-auto">
               <div className="d-inline-flex">
                 <NavLink to="/aboutMe" className="nav-link">
                   <FaArrowLeft
-                    className="arrow mt-4 white"
+                    className="arrow white"
                   />
                 </NavLink>
                 <NavLink to="/home" className="nav-link">
                   <FaArrowRight
-                    className="arrow mt-4 white"
+                    className="arrow white"
                   />
                 </NavLink>
               </div>

@@ -61,7 +61,7 @@ class Navbar extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/skills" className="nav-link">
+                  <NavLink to="/download" className="nav-link">
                   <span className="nav-link text-white text-left">Download CV</span>
                   </NavLink>
                 </li>

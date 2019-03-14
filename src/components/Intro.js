@@ -25,7 +25,7 @@ export default class Intro extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12">
-                <h2 className="header text-right text-white border border-warning pr-3">Hello</h2>
+                <h2 className="header-intro text-right text-white border border-warning pr-2">Hello</h2>
             </div>
           </div>
         </div>
