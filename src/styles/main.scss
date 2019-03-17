@@ -24,6 +24,6 @@ body {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after,
-.hamburger--squeeze {
+.hamburger.is-active {
   background-color: white;
 }
