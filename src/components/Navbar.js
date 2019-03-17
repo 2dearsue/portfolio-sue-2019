@@ -40,8 +40,8 @@ class Navbar extends Component {
                 type="button"
                 onClick={this.addActiveClass}
                 >
-              <span className="hamburger-box text-info">
-                <span className="hamburger-inner"></span>
+              <span className="hamburger-box">
+                <span className="hamburger-inner bg-white"></span>
               </span>
             </button>
           </div>
