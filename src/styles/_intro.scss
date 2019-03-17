@@ -45,11 +45,8 @@
 }
 
 .intro-text {
-  // font-weight: bold;
   font-size: 1rem;
   font-style: italic;
-  // text-shadow: 0.3vw 0.3vw grey;
-  // margin-top: 20vw;
 }
 
 .skills-header {
@@ -68,18 +65,11 @@
 }
 
 .skills-text {
-  // @extend .portfolio;
   font-family: $lato;
   font-style: italic;
   text-transform: uppercase;
-  // font-size: 0.9rem;
-  // transform: translate(0);
 }
 
 .sub-text {
   font-size: 0.6rem;
 }
-
-// .arrows {
-//   margin-top: -20vw;
-// }

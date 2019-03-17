@@ -1,9 +1,9 @@
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'mediaQueries';
 @import 'colors';
 @import 'fonts';
 @import 'intro';
 @import 'aboutMe';
-@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
-@import 'mediaQueries';
 @import 'download';
 
 body {
@@ -19,4 +19,13 @@ body {
 
 .card {
       background: rgba(255,255,255, 0) !important;
+}
+
+.hamburger-inner {
+ background-color: violet !important;
+
+  &:before,
+  &:after {
+    background-color: violet !important;
+  }
 }
