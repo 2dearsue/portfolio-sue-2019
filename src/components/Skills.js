@@ -23,7 +23,7 @@ class Skills extends Component {
 
       <div className="container">
         <div className="row">
-          <div className="col-12 col-sm-12 mt-5">
+          <div className="col-12 col-sm-12 mt-2">
               <h2 className="header text-right text-white border border-warning pr-3">Skills</h2>
           </div>
         </div>
@@ -32,7 +32,7 @@ class Skills extends Component {
         <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
           <div className="row mx-auto">
             <div className="">
-              <div className="box bg-white mb-3">
+              <div className="box-skills bg-white mb-3">
                 <SkillIcons />
               </div>
             </div>
