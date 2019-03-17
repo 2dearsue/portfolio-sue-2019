@@ -20,3 +20,9 @@ body {
 .card {
       background: rgba(255,255,255, 0) !important;
 }
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white;
+}
