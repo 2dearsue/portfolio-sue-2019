@@ -11,7 +11,7 @@ class Skills extends Component {
 
       <>
 
-      <div className="container d-flex justify-content-end mb-5">
+      <div className="container d-flex justify-content-end mb-lg-5 mb-xl-5">
         <div className="row">
           <div className="">
             <div className="col-xs-10">
@@ -23,8 +23,8 @@ class Skills extends Component {
 
       <div className="container">
         <div className="row">
-          <div className="col-12 col-sm-12 mt-5">
-              <h2 className="header text-right text-white border border-warning pr-3">Skills</h2>
+          <div className="col-12 col-sm-12 mt-xl-5 mt-lg-5">
+              <h2 className="skills-header text-right text-white border border-warning pr-3">Skills</h2>
           </div>
         </div>
       </div>

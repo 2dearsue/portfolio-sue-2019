@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
       <div className="container my-auto">
         <div className="row">
           <div className="col-12 col-sm-12 mt-5">
-              <h2 className="header text-right text-white border border-warning pr-3">I am</h2>
+              <h2 className="header-intro text-right text-white border border-warning pr-3">I am</h2>
           </div>
         </div>
       </div>
