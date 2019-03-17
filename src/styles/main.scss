@@ -4,6 +4,7 @@
 @import 'aboutMe';
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 @import 'mediaQueries';
+@import 'download';
 
 body {
  background-image: url("../img/background.jpg");
@@ -14,4 +15,8 @@ body {
 }
 .show{
    display: block;
+}
+
+.card {
+      background: rgba(255,255,255, 0) !important;
 }

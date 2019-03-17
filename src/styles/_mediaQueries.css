@@ -1,10 +1,7 @@
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
   .box {
     margin-top: -18vw;
   }
-
   .box-intro {
     width: 80vw;
     height: 40vw;
@@ -13,17 +10,14 @@
     z-index: -1;
     top: 3vw;
   }
-
   .header-intro {
     font-weight: bold;
     font-size: 3rem;
     text-shadow: 0.3vw 0.3vw grey;
-    // transform: translate(-8vw, -3vw);
     position: relative;
     top: 0vw;
     left: -15vw;
   }
-
   .portfolio {
     font-size: 3rem;
     font-style: italic;
@@ -31,13 +25,10 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
   .box {
     margin-top: -13vw;
   }
-
   .box-intro {
     width: 80vw;
     height: 40vw;
@@ -45,19 +36,15 @@
     position: relative;
     z-index: -1;
     top: -3vw;
-    // margin-top: -13vw;
   }
-
   .header-intro {
     font-weight: bold;
     font-size: 4rem;
     text-shadow: 0.3vw 0.3vw grey;
-    // transform: translate(-8vw, -3vw);
     position: relative;
     top: -7vw;
     left: -10vw;
   }
-
   .portfolio {
     font-size: 4rem;
     font-style: italic;
@@ -65,13 +52,10 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
   .box {
     margin-top: -16vw;
   }
-
   .box-intro {
     width: 80vw;
     height: 40vw;
@@ -80,21 +64,17 @@
     z-index: -1;
     top: -12vw;
   }
-
   .header-intro {
     font-weight: bold;
     font-size: 5rem;
     text-shadow: 0.3vw 0.3vw grey;
-    // transform: translate(-8vw, -3vw);
     position: relative;
     z-index: -1;
     top: -16vw;
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
   .box-intro {
     width: 80vw;
     height: 25vw;
@@ -103,7 +83,6 @@
     z-index: -1;
     top: 6vw;
   }
-
   .header-intro {
     font-weight: bold;
     font-size: 5rem;

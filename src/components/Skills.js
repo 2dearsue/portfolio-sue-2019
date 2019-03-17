@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaHtml5, FaArrowRight, FaArrowLeft, FaCss3, FaSass, FaJs, FaReact, FaSlack, FaGit } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft} from 'react-icons/fa';
 import { Route, NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
 import SkillIcons from './SkillIcons';
@@ -11,7 +11,7 @@ class Skills extends Component {
 
       <>
 
-      <div className="container d-flex justify-content-end">
+      <div className="container d-flex justify-content-end mb-5">
         <div className="row">
           <div className="">
             <div className="col-xs-10">
@@ -32,25 +32,25 @@ class Skills extends Component {
         <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
           <div className="row mx-auto">
             <div className="">
-              <div className="box-intro bg-white">
+              <div className="box bg-white mb-3">
                 <SkillIcons />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container arrows">
           <div className="row">
-            <div className="col-4 offset-4">
+            <div className="ml-auto mr-auto">
               <div className="d-inline-flex">
                 <NavLink to="/aboutMe" className="nav-link">
                   <FaArrowLeft
-                    className="arrow mt-4 white"
+                    className="arrow white"
                   />
                 </NavLink>
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/download" className="nav-link">
                   <FaArrowRight
-                    className="arrow mt-4 white"
+                    className="arrow white"
                   />
                 </NavLink>
               </div>

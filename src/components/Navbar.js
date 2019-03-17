@@ -30,7 +30,7 @@ class Navbar extends Component {
   render() {
     return (
       <section>
-        <nav className="navbar navbar-expand-lg navbar-light float-right">
+        <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
 
           <div className="col-xs-2">
             <button
@@ -61,8 +61,8 @@ class Navbar extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/skills" className="nav-link">
-                  <span className="nav-link text-white text-right">Download CV</span>
+                  <NavLink to="/download" className="nav-link">
+                  <span className="nav-link text-white text-left">Download CV</span>
                   </NavLink>
                 </li>
               </ul>

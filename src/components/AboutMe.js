@@ -12,9 +12,17 @@ export default class AboutMe extends Component {
     <>
       <section>
 
-      <Navbar />
+      <div className="container d-flex justify-content-end mb-5">
+        <div className="row">
+          <div className="">
+            <div className="col-xs-10">
+              <Navbar />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div className="container">
+      <div className="container my-auto">
         <div className="row">
           <div className="col-12 col-sm-12 mt-5">
               <h2 className="header text-right text-white border border-warning pr-3">I am</h2>
@@ -22,21 +30,21 @@ export default class AboutMe extends Component {
         </div>
       </div>
 
-        <div className="container d-flex flex-column justify-content-center mt-5 pt-lg-5 pt-xl-5">
+        <div className="container d-flex flex-column justify-content-center mt-5 p-5">
           <div className="row mx-auto">
             <div className="">
-              <div className="box-intro bg-white">
+              <div className="box bg-white">
                 <IntroText />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container arrows">
           <div className="row">
-            <div className="col-4 offset-4">
+            <div className="ml-auto mr-auto">
               <div className="d-inline-flex">
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/home" className="nav-link">
                   <FaArrowLeft
                     className="arrow mt-4 white"
                   />
