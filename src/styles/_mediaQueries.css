@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
   .box {
-    margin-top: -13vw;
+    margin-top: -22vw;
   }
   .box-intro {
     width: 80vw;
@@ -36,6 +36,9 @@
     position: relative;
     z-index: -1;
     top: -3vw;
+  }
+  .box-skills {
+    margin-top: -15vw;
   }
   .header-intro {
     font-weight: bold;
@@ -54,7 +57,7 @@
 
 @media (min-width: 992px) {
   .box {
-    margin-top: -16vw;
+    margin-top: -18vw;
   }
   .box-intro {
     width: 80vw;
