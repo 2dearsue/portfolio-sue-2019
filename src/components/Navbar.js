@@ -41,7 +41,7 @@ class Navbar extends Component {
                 onClick={this.addActiveClass}
                 >
               <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
+                <span className="hamburger-inner burger-inner"></span>
               </span>
             </button>
           </div>
