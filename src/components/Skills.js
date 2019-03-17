@@ -11,7 +11,7 @@ class Skills extends Component {
 
       <>
 
-      <div className="container d-flex justify-content-end">
+      <div className="container d-flex justify-content-end mb-5">
         <div className="row">
           <div className="">
             <div className="col-xs-10">

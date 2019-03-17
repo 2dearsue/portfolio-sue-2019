@@ -8,7 +8,7 @@ export default class Pdf extends Component {
     return (
       <>
         <section className="jumbotron mt-5 my-2">
-          <img alt="CV-SusanneSchuett-Frontend" src="./img/background.jpg" />
+          <a href="/portfolio-revamp/public/documents/resume.pdf">Resume</a>
         </section>
 
         <div className="container arrows mt-5">

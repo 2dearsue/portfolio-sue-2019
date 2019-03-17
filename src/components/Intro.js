@@ -9,7 +9,7 @@ export default class Intro extends Component {
     <>
       <section>
 
-      <div className="container d-flex justify-content-end">
+      <div className="container d-flex justify-content-end mb-4">
         <div className="row">
           <div className="">
             <div className="col-xs-10">

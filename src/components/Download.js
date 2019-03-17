@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import pdf from '../files/CV_SusanneSchuett_Frontend.pdf';
 
 export default class Download extends Component {
   render() {
@@ -22,10 +23,10 @@ export default class Download extends Component {
         <section className="section-download pt-5">
           <div className="card pt-2 border-0 card-primary bg-transparent">
             <div className="container flex">
-              <FaArrowCircleDown className="arrow-down animated infinite pulse delay-2s pt-2"></FaArrowCircleDown>
-              <NavLink to="/Pdf" className="nav-link">
-                <h3 className="header-download animated fadeIn delay-1s">Here you will find my <span>CV</span> soon!</h3>
-              </NavLink>
+              <FaArrowCircleDown className="arrow-down animated infinite pulse delay-2s pt-2 pb-5"></FaArrowCircleDown>
+              <a href={pdf}>
+                <h3 className="header-download animated fadeIn delay-1s">Here you can download my <span>CV</span> </h3>
+              </a>
             </div>
           </div>
         </section>
