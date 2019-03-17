@@ -38,10 +38,8 @@
 }
 
 .box-skills {
-  @extend .box-intro;
-  width: 75vw;
-  height: 110vw;
-  transform: translateY(-16vw);
+  @extend .box;
+  margin-top: -24vw;
 }
 
 .intro-text {
