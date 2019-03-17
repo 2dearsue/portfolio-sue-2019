@@ -24,7 +24,7 @@ class Skills extends Component {
       <div className="container">
         <div className="row">
           <div className="col-12 col-sm-12 mt-2">
-              <h2 className="header text-right text-white border border-warning pr-3">Skills</h2>
+              <h2 className="header text-right text-white border border-warning pr-3 mt-lg-5">Skills</h2>
           </div>
         </div>
       </div>
