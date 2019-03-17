@@ -30,7 +30,7 @@ class Navbar extends Component {
   render() {
     return (
       <section>
-        <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
+        <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-end mb-5">
 
           <div className="col-xs-2">
             <button
@@ -41,7 +41,7 @@ class Navbar extends Component {
                 onClick={this.addActiveClass}
                 >
               <span className="hamburger-box">
-                <span className="hamburger-inner bg-white"></span>
+                <span className="hamburger-inner"></span>
               </span>
             </button>
           </div>
